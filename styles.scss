@@ -1,0 +1,97 @@
+$black: #000;
+$blue: #00ebd4;
+
+@import url(https://fonts.googleapis.com/css?family=Share+Tech);
+$shareTech: "Share Tech";
+
+body{
+   background-color: $black;
+}
+
+h1{
+   font-family: $shareTech;
+   animation: pulse .9s infinite;
+   color: $blue;
+}
+
+#identity-results, #resume, #loading-alpha-div, #loadingH1, #loadingMessage2, #message{
+   margin-top: 20px;
+   font-family: $shareTech;
+   font-weight: 900;
+   font-size: 24px;
+   color: $blue;
+   animation: pulse .9s infinite;
+}
+
+i{
+   font-size: 24px;
+   color: $blue;
+   animation: pulse .9s infinite;  
+}
+
+.block{
+   width: 50px;
+   height: 50px;
+   background-color: $black;
+}
+
+@keyframes pulse {
+   0% {
+    opacity: 1;
+  }
+   50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cursor:after {
+	content:"_";
+	opacity: 0;
+	animation: cursor 1s infinite;
+}
+.sign:before{
+   content: "> ";
+}
+@keyframes cursor {
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+#loading-alpha-div, .img-div{
+   display: none;
+}
+
+img{
+   margin: 50px 0;
+   animation: pulse .9s infinite;
+}
+
+#loadingMessage2{
+   display: none;
+}
+
+.sub-item{
+   margin-top: 20px;
+   margin-left: 40px;
+}
+
+.inline{
+   display: inline;
+   margin-left: 10px;
+}
