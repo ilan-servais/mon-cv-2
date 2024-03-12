@@ -22,17 +22,17 @@ var initProgram = setTimeout(function(){
     var $alias = "KNOWN ALIAS: PETRUSR3X"
     var $occupation  = "OCCUPATION: FRONT END DEVELOPER | WORDPRESS DEVLOPER | DESIGNER";
     var $frontEnd  = "FRONT END DEVELOPMENT CORE: HTML5 | CSS3 | JAVASCRIPT";
-      var $JSFrameworks = "JAVASCRIPT FRAMEWORKS: ANGULARJS";
-      var $JSLibs = "JAVASCRIPT LIBRARIES: JQUERY | D3 | C3";
-      var $CSSFrameworks = "CSS FRAMEWORKS: BOOTSTRAP | SEMANTIC UI";
-      var $CSSPre = "CSS PREPROCESSORS: SASS | LESS | STYLUS";
-      var $frontEndAnimation = "FRONT END ANIMATION: CANVAS | HTML5 | SVG";
+    var $JSFrameworks = "JAVASCRIPT FRAMEWORKS: ANGULARJS";
+    var $JSLibs = "JAVASCRIPT LIBRARIES: JQUERY | D3 | C3";
+    var $CSSFrameworks = "CSS FRAMEWORKS: BOOTSTRAP | SEMANTIC UI";
+    var $CSSPre = "CSS PREPROCESSORS: SASS | LESS | STYLUS";
+    var $frontEndAnimation = "FRONT END ANIMATION: CANVAS | HTML5 | SVG";
     var $cmsDevelopment = "WORDPRESS DEVELOPMENT: WORDPRESS";
-      var $wordpress = "WORDPRESS: CUSTOM THEMING | PLUGINS";
+    var $wordpress = "WORDPRESS: CUSTOM THEMING | PLUGINS";
     var $design = "DESIGN CORE: ADOBE SUITE";
-      var $webDesign = "WEB DESIGN: INDESIGN CC | MUSE CC";
-      var $branding = "ILLUSTRATIONS & BRANDING: ILLUSTRATOR CC | PHOTOSHOP CC";
-      var $designAnimation = "ANIMATION DESIGN: AFTER EFFECTS CC | FLASH CC";
+    var $webDesign = "WEB DESIGN: INDESIGN CC | MUSE CC";
+    var $branding = "ILLUSTRATIONS & BRANDING: ILLUSTRATOR CC | PHOTOSHOP CC";
+    var $designAnimation = "ANIMATION DESIGN: AFTER EFFECTS CC | FLASH CC";
       
    function initIdentityResults(i){
        $("#message").addClass("sign cursor").text(message.substring(0, i));
@@ -275,5 +275,3 @@ var initProgram = setTimeout(function(){
 }, 1500);
 
 initProgram()
-
-
