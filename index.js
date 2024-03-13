@@ -27,8 +27,8 @@
     var $CSSFrameworks = "Project Management | Agile Methodology | Design (UML / Merise)";
     var $CSSPre = "Mobile Development | SEO";
     var $frontEndAnimation = "Documentation and Deployment";
-    var $cmsDevelopment = "0";
-    var $wordpress = "1";
+    var $cmsDevelopment = "01010100 01110101 00100000 01110100 01110010 01100001 01100100 01110101 01101001 01110100 00111111";
+    var $wordpress = "00111100 00110011";
     var $design = "0";
     var $webDesign = "0";
     var $branding = "0";
@@ -278,3 +278,17 @@
 initProgram()
 
 
+document.addEventListener("DOMContentLoaded", function() {
+   var socialLinks = document.getElementById("social-links");
+   var imgEffects = socialLinks.querySelectorAll(".img-effect");
+
+   // Définir un délai de 2 secondes (2000 millisecondes)
+   var delay = 5000;
+
+   // Ajouter la classe 'show' à chaque image après le délai spécifié
+   setTimeout(function() {
+       imgEffects.forEach(function(img) {
+           img.classList.add("show");
+       });
+   }, delay);
+});

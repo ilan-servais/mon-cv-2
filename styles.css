@@ -91,3 +91,14 @@ img {
   display: inline;
   margin-left: 10px;
 }
+
+/* styles.css */
+
+.img-effect {
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
+.img-effect.show {
+  opacity: 1;
+}
