@@ -1,5 +1,36 @@
+/* Styles de base */
+
 body {
   background-color: #000;
+  margin: 0;
+  padding: 0;
+}
+/* classe .container est utilisée pour contenir le contenu de la page et limiter sa largeur à 1200px. */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.img-container img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Media queries pour les écrans de taille moyenne */
+@media screen and (max-width: 992px) {
+  .container {
+      padding: 10px;
+  }
+}
+
+/* Media queries pour les écrans de petite taille */
+@media screen and (max-width: 768px) {
+  .container {
+      padding: 5px;
+  }
 }
 
 h1 {
@@ -69,15 +100,6 @@ i {
   }
 }
 
-#loading-alpha-div, .img-div {
-  display: none;
-}
-
-img {
-  margin: 50px 0;
-  animation: pulse 0.9s infinite;
-}
-
 #loadingMessage2 {
   display: none;
 }
@@ -92,13 +114,20 @@ img {
   margin-left: 10px;
 }
 
-/* styles.css */
 
-.img-effect {
-  opacity: 0;
-  transition: opacity 3s ease-in-out;
+.img-container {
+  position: fixed;
+  bottom: 0;
+  right: 0%; /* Pour centrer les images horizontalement */
+  transform: translateX(-50%);
 }
 
-.img-effect.show {
-  opacity: 1;
+.img-container img {
+  opacity: 0;
+  transition: opacity 30s ease-in-out, transform 10s ease-in-out;
+  margin-top: 20px; /* Espacement entre le texte et les images */
+}
+
+#social-links {
+  margin-top: 20px; /* Espacement entre le texte et les images */
 }
