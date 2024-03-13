@@ -16,7 +16,7 @@
    
    var initProgram = setTimeout(function(){
     var greeting = "UNIDENTIFIED ORGANIC LIFEFORM DETECTED";
-    var message = "Running code protocol for digital transcendence into the cybernetic @realm of limitless possibilities... 01001000 01100101 01101100 01101100 01101111";
+    var message = "Running code protocol for.. Web Development Student | 📆Available for a 2-year internship starting September 2024 | Passionate about the Web and Gaming 🎮 | Aspiring Full Stack Developer... 01001000 01100101 01101100 01101100 01101111";
     var $identityDiv = $("#identity-results");
     var $name = "NAME: ILAN SERVAIS";
     var $alias = "KNOWN ALIAS: SL4SH"
@@ -27,12 +27,12 @@
     var $CSSFrameworks = "Project Management | Agile Methodology | Design (UML / Merise)";
     var $CSSPre = "Mobile Development | SEO";
     var $frontEndAnimation = "Documentation and Deployment";
-    var $cmsDevelopment = "z";
-    var $wordpress = "x";
-    var $design = "s";
-    var $webDesign = "e";
-    var $branding = "";
-    var $designAnimation = "";
+    var $cmsDevelopment = "0";
+    var $wordpress = "1";
+    var $design = "0";
+    var $webDesign = "0";
+    var $branding = "0";
+    var $designAnimation = "0";
     
          
       function initIdentityResults(i){
