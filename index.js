@@ -17,18 +17,22 @@
    var initProgram = setTimeout(function(){
     var greeting = "UNIDENTIFIED ORGANIC LIFEFORM DETECTED";
     var message = "Running code protocol for digital transcendence into the cybernetic @realm of limitless possibilities... 01001000 01100101 01101100 01101100 01101111";
-    var $design = $("#identity-results");
+    var $identityDiv = $("#identity-results");
     var $name = "NAME: ILAN SERVAIS";
     var $alias = "KNOWN ALIAS: SL4SH"
-    var $occupation  = "OCCUPATION: STUDENT WEB DEVELOPER | GAMER";
-    var $frontEnd  = "FRONT END DEVELOPMENT: HTML5 | CSS3";
-    var $JSFrameworks = "BACK END DEVELOPMENT: PHP | MySQL";
-    var $CSSFrameworks = "FULL STACK DEVELOPMENT: Javascript | Node.js | React | Symfony";
-    var $JSLibs = "JAVASCRIPT LIBRARIES: JQUERY";
-    var $CSSPre = "API Development with API Platform | Express";
-    var $frontEndAnimation = "Project Management, Agile Methodology";
-    var $cmsDevelopment = "Design (UML / Merise)";
-    var $wordpress = "Mobile Development";
+    var $occupation  = "OCCUPATION: WEB DEVELOPER | GAMER";
+    var $frontEnd  = "Front & Back-end Development: HTML | CSS | PHP | MySQL";
+    var $JSFrameworks = "Full-stack Development: JavaScript | Node.js | React | Symfony";
+    var $JSLibs = "API Development: API Platform | Express";
+    var $CSSFrameworks = "Project Management | Agile Methodology | Design (UML / Merise)";
+    var $CSSPre = "Mobile Development | SEO";
+    var $frontEndAnimation = "Documentation and Deployment";
+    var $cmsDevelopment = "z";
+    var $wordpress = "x";
+    var $design = "s";
+    var $webDesign = "e";
+    var $branding = "";
+    var $designAnimation = "";
     
          
       function initIdentityResults(i){
