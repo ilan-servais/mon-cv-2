@@ -274,6 +274,6 @@ $(window).on("load", function() {
 
    // Supprimer la classe img-hidden une fois que la page est chargée
    $(".img-container img").css("opacity", "0").each(function(index) {
-       $(this).delay(500 * index).animate({ opacity: 1 }, 1000);
+       $(this).delay(500 * index).animate({ opacity: 1 }, 51000);
    });
 });

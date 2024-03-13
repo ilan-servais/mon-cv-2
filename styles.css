@@ -116,18 +116,14 @@ i {
 
 
 .img-container {
-  position: fixed;
+  position: center;
   bottom: 0;
   right: 0%; /* Pour centrer les images horizontalement */
-  transform: translateX(-50%);
 }
 
 .img-container img {
   opacity: 0;
-  transition: opacity 30s ease-in-out, transform 10s ease-in-out;
+  transition: opacity 10s ease-in-out, transform 10s ease-in-out;
   margin-top: 20px; /* Espacement entre le texte et les images */
 }
 
-#social-links {
-  margin-top: 20px; /* Espacement entre le texte et les images */
-}
