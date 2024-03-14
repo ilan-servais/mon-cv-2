@@ -12,6 +12,7 @@ body {
   max-width: 1200px; /* Largeur maximale de la page */
   margin: 0 auto; /* Centrer horizontalement */
   padding: 20px; /* Ajouter un espace intérieur */
+  position: relative; /* Position relative pour permettre le positionnement absolu de l'audio-container */
 }
 
 .img-container img {
@@ -122,7 +123,7 @@ i {
 
 .img-container {
   position: center; /* Positionnement central */
-  bottom: 0; /* Bas */
+  bottom: 20px; /* Bas */
   right: 0%; /* Droite */
 }
 
@@ -178,4 +179,34 @@ i {
 
 .image-link:hover .text-overlay {
   opacity: 1; /* Afficher le texte */
+}
+
+/*Styliser la barre de volume */
+.custom-volume-control {
+  width: 100px; /* Largeur personnalisée */
+  height: 10px; /* Hauteur personnalisée */
+  /* Ajoutez d'autres styles selon vos préférences */
+}
+
+/* Personnaliser le bouton de pause/lecture */
+button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #00ebd4; /* Couleur de fond */
+  color: #000000; /* Couleur du texte */
+  border: none; /* Supprimer les bordures */
+  padding: 10px 20px; /* Espacement intérieur */
+  cursor: pointer; /* Curseur de souris */
+  border-radius: 30px; /* Coins arrondis */
+  /* Ajoutez d'autres styles selon vos préférences */
+}
+
+.audio-player {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  padding: 20px;
+  z-index: 1;
+  margin-left: -150px; /* La moitié de la largeur */
 }

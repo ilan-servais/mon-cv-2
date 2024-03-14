@@ -45,7 +45,7 @@
                 <div class="image-wrapper">
                     <img src="img/logo-ville-de-marseille.png" alt="Marseille Logo" width="185" height="185" class="img-hidden">
                     <div class="overlay"></div> <!-- Filtre semi-transparent -->
-                    <span class="text-overlay">Marseille | 3xPlayers</span> <!-- Texte sur l'image -->
+                    <span class="text-overlay">Marseille 3xPlayers</span> <!-- Texte sur l'image -->
                 </div>
             </a>
 
@@ -67,6 +67,18 @@
                 </div>
             </a>            
         </div>
+    </div>
+
+    <!-- Lecture automatique de la musique -->
+    <div id="audioPlayer">
+        <!-- Intégration du lecteur audio avec lecture automatique et répétition -->
+        <audio id="musicPlayer" src="img/X-Files-Theme-Piano-Myuu.mp3" autoplay loop></audio>
+    
+        <!-- Contrôle de volume -->
+        <input type="range" id="volumeControl" class="custom-volume-control" min="0" max="1" step="0.1" value="1" onchange="changeVolume()">
+    
+        <!-- Bouton de pause/lecture -->
+        <button onclick="togglePlayPause()">Pause | Play</button>
     </div>
 
     <!-- Inclusion de jQuery -->
