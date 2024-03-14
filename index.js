@@ -22,15 +22,15 @@ $(window).on("load", function() {
        var $name = "NAME: ILAN SERVAIS";
        var $alias = "KNOWN ALIAS: SL4SH"
        var $occupation  = "OCCUPATION: WEB DEVELOPER | GAMER";
-       var $frontEnd  = "Front & Back-end Development: HTML | CSS | PHP | MySQL";
-       var $JSFrameworks = "Full-stack Development: JavaScript | Node.js | React | Symfony";
-       var $JSLibs = "API Development: API Platform | Express";
-       var $CSSFrameworks = "Project Management | Agile Methodology | Design (UML / Merise)";
-       var $CSSPre = "Mobile Development | SEO";
-       var $frontEndAnimation = "Documentation and Deployment";
-       var $cmsDevelopment = "01010100 01110101 00100000 01110100 01110010 01100001 01100100 01110101 01101001 01110100 00111111";
-       var $wordpress = "00111100 00110011";
-       var $design = "LOADING...";
+       var $frontEnd  = "Skills developed in web developer specialization";
+       var $JSFrameworks = "Front & Back-end Development: HTML | CSS | PHP | MySQL";
+       var $JSLibs = "Full-stack Development: JavaScript | Node.js | React | Symfony";
+       var $CSSFrameworks = "API Development: API Platform | Express";
+       var $CSSPre = "Project Management | Agile Methodology | Design (UML / Merise)";
+       var $frontEndAnimation = "Mobile Development | SEO | Documentation and Deployment";
+       var $cmsDevelopment = "00111100 00110011";
+       var $wordpress = "LOADING PROJECTS...";
+       var $design = " ";
 
        function initIdentityResults(i){
            $("#message").addClass("sign cursor").text(message.substring(0, i));
@@ -274,6 +274,6 @@ $(window).on("load", function() {
 
    // Supprimer la classe img-hidden une fois que la page est chargée
    $(".img-container img").css("opacity", "0").each(function(index) {
-       $(this).delay(500 * index).animate({ opacity: 1 }, 51000);
+       $(this).delay(500 * index).animate({ opacity: 1 }, 45000);
    });
 });

@@ -118,12 +118,59 @@ i {
 .img-container {
   position: center;
   bottom: 0;
-  right: 0%; /* Pour centrer les images horizontalement */
+  right: 0%; 
 }
 
 .img-container img {
   opacity: 0;
-  transition: opacity 10s ease-in-out, transform 10s ease-in-out;
-  margin-top: 20px; /* Espacement entre le texte et les images */
+  transition: opacity 30s ease-in-out, transform 40s ease-in-out;
+  margin-top: 20px; 
+  vertical-align: middle;
+}
+
+/* Afficher le texte au survol */
+.image-link:hover .text-overlay {
+  opacity: 1;
+}
+/* Positionnement relatif pour le conteneur d'image */
+.image-wrapper {
+  position: relative;
+  display: inline-block; /* pour s'adapter à la taille de l'image */
+}
+
+/* Filtre semi-transparent */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Prend la largeur de l'image */
+  height: 100%; /* Prend la hauteur de l'image */
+  background-color: rgba(0, 235, 212, 0.667); /* #00ebd4 semi-transparent */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Texte sur l'image */
+.text-overlay {
+font-family: "Share Tech", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #77C2F8; /* Couleur du texte */
+  font-size: 18px; /* Taille du texte */
+  font-weight: bold; /* Gras */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Contour noir */
+}
+
+/* Afficher le texte et le filtre au survol */
+.image-link:hover .overlay {
+  opacity: 1;
+}
+
+.image-link:hover .text-overlay {
+  opacity: 1;
 }
 
