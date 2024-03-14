@@ -4,63 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers la feuille de style CSS externe -->
 </head>
 <body>
     <div class="container">
+        <!-- Titre principal avec une icône -->
         <h1 id="loadingH1"><span><i class="fa fa-cogs"></i></span> RUNNING IDENTITY PROTOCOL<span id="loading">.</span></h1>
-            <div id="identity-results">
-                <h1 id="greeting"></h1>
-                <p id="message"></p>
-            </div>
-            <h3 id="loadingMessage2">LOADING RESUME<span id="alpha-loading"></span>.</h3>
+        
+        <!-- Div pour afficher les résultats d'identité -->
+        <div id="identity-results">
+            <h1 id="greeting"></h1> <!-- Titre de salutation -->
+            <p id="message"></p> <!-- Message d'identification -->
+        </div>
+        
+        <!-- Message de chargement pour le CV -->
+        <h3 id="loadingMessage2">LOADING RESUME<span id="alpha-loading"></span>.</h3>
 
+        <!-- Div pour afficher le CV -->
         <div id="resume">
-            <h3 id="name"></h3>
-            <h3 id="alias"></h3> 
-            <h3 id="occupation"></h3>
+            <h3 id="name"></h3> <!-- Nom -->
+            <h3 id="alias"></h3> <!-- Alias -->
+            <h3 id="occupation"></h3> <!-- Occupation -->
             <br>
+            <!-- Compétences en développement -->
             <i id="front-end-span"></i><h3 id="front-end" class="inline"></h3>
             <h4 id="js-frameworks" class="sub-item"></h4>
             <h4 id="js-libs" class="sub-item"></h4>
             <h4 id="css-frameworks" class="sub-item"></h4>
             <h4 id="css-pre" class="sub-item"></h4>
             <h4 id="front-end-animation" class="sub-item"></h4>
-            <h4 id="CMS-development" class="sub-item"></h4>
+            <h4 id="CMS-development" class="sub-item"></h4> 
             <h4 id="wordpress" class="sub-item"></h4>
             <h4 id="design" class="sub-item"></h4>
-                          
         </div>
 
+        <!-- Div pour afficher les liens sociaux avec les images -->
         <div id="social-links" class="img-container">
+            <!-- Lien vers la page Marseille avec le logo -->
             <a href="https://ilan-servais.students-laplateforme.io/ville-marseille/marseille.html" target="_blank" class="image-link">
                 <div class="image-wrapper">
                     <img src="img/logo-ville-de-marseille.png" alt="Marseille Logo" width="185" height="185" class="img-hidden">
-                    <div class="overlay"></div>
-                    <span class="text-overlay">Marseille | 3xPlayers</span>
+                    <div class="overlay"></div> <!-- Filtre semi-transparent -->
+                    <span class="text-overlay">Marseille | 3xPlayers</span> <!-- Texte sur l'image -->
                 </div>
             </a>
 
+            <!-- Lien vers GitHub avec le logo -->
             <a href="https://github.com/ilan-servais" target="_blank" class="image-link">
                 <div class="image-wrapper">
                     <img src="img/githubimg.png" alt="GitHub Logo" width="150" height="150" class="img-hidden">
-                    <div class="overlay"></div>
-                    <span class="text-overlay">GitHub</span>
+                    <div class="overlay"></div> <!-- Filtre semi-transparent -->
+                    <span class="text-overlay">GitHub</span> <!-- Texte sur l'image -->
                 </div>
             </a>
             
+            <!-- Lien vers LinkedIn avec le logo -->
             <a href="https://www.linkedin.com/in/ilan-servais-036a152b1" target="_blank" class="image-link">
                 <div class="image-wrapper">
                     <img src="img/linkedinimg.png" alt="LinkedIn Logo" width="150" height="150" class="img-hidden">
-                    <div class="overlay"></div>
-                    <span class="text-overlay">LinkedIn</span>
+                    <div class="overlay"></div> <!-- Filtre semi-transparent -->
+                    <span class="text-overlay">LinkedIn</span> <!-- Texte sur l'image -->
                 </div>
             </a>            
-
         </div>
     </div>
 
+    <!-- Inclusion de jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Inclusion du script JavaScript -->
     <script src="index.js"></script>
 </body>
 </html>

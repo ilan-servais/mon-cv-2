@@ -1,65 +1,68 @@
 /* Styles de base */
 
 body {
-  background-color: #000;
-  margin: 0;
-  padding: 0;
+  background-color: #000; /* Couleur de fond */
+  margin: 0; /* Supprime les marges par défaut */
+  padding: 0; /* Supprime les marges intérieures par défaut */
 }
-/* classe .container est utilisée pour contenir le contenu de la page et limiter sa largeur à 1200px. */
+
+/* Classe .container utilisée pour contenir le contenu de la page et limiter sa largeur à 1200px. */
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 1200px; /* Largeur maximale de la page */
+  margin: 0 auto; /* Centrer horizontalement */
+  padding: 20px; /* Ajouter un espace intérieur */
 }
 
 .img-container img {
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
+  max-width: 100%; /* Image occupant toute la largeur */
+  height: auto; /* Hauteur ajustée automatiquement */
+  margin: 0 auto; /* Centrer horizontalement */
 }
 
 /* Media queries pour les écrans de taille moyenne */
 @media screen and (max-width: 992px) {
   .container {
-      padding: 10px;
+      padding: 10px; /* Réduire l'espace intérieur */
   }
 }
 
 /* Media queries pour les écrans de petite taille */
 @media screen and (max-width: 768px) {
   .container {
-      padding: 5px;
+      padding: 5px; /* Réduire davantage l'espace intérieur */
   }
 }
 
 h1 {
-  font-family: "Share Tech";
-  animation: pulse 0.9s infinite;
-  color: #00ebd4;
+  font-family: "Share Tech"; /* Police de caractères */
+  animation: pulse 0.9s infinite; /* Animation de pulsation */
+  color: #00ebd4; /* Couleur du texte */
 }
 
+/* Styles pour différents éléments de texte */
 #identity-results, #resume, #loading-alpha-div, #loadingH1, #loadingMessage2, #message {
-  margin-top: 20px;
-  font-family: "Share Tech";
-  font-weight: 900;
-  font-size: 24px;
-  color: #00ebd4;
-  animation: pulse 0.9s infinite;
+  margin-top: 20px; /* Marge supérieure */
+  font-family: "Share Tech"; /* Police de caractères */
+  font-weight: 900; /* Poids de la police */
+  font-size: 24px; /* Taille de la police */
+  color: #00ebd4; /* Couleur du texte */
+  animation: pulse 0.9s infinite; /* Animation de pulsation */
 }
 
 i {
-  font-size: 24px;
-  color: #00ebd4;
-  animation: pulse 0.9s infinite;
+  font-size: 24px; /* Taille de la police */
+  color: #00ebd4; /* Couleur du texte */
+  animation: pulse 0.9s infinite; /* Animation de pulsation */
 }
 
 .block {
-  width: 50px;
-  height: 50px;
-  background-color: #000;
+  width: 50px; /* Largeur */
+  height: 50px; /* Hauteur */
+  background-color: #000; /* Couleur de fond */
 }
 
+/* Animation de pulsation */
 @keyframes pulse {
   0% {
     opacity: 1;
@@ -72,16 +75,18 @@ i {
   }
 }
 
+/* Curseur clignotant */
 .cursor:after {
-  content: "_";
-  opacity: 0;
-  animation: cursor 1s infinite;
+  content: "_"; /* Contenu */
+  opacity: 0; /* Opacité */
+  animation: cursor 1s infinite; /* Animation de clignotement */
 }
 
 .sign:before {
-  content: "> ";
+  content: "> "; /* Contenu */
 }
 
+/* Animation de clignotement */
 @keyframes cursor {
   0% {
     opacity: 0;
@@ -101,76 +106,76 @@ i {
 }
 
 #loadingMessage2 {
-  display: none;
+  display: none; /* Masquer */
 }
 
+/* Styles pour les sous-éléments */
 .sub-item {
-  margin-top: 20px;
-  margin-left: 40px;
+  margin-top: 20px; /* Marge supérieure */
+  margin-left: 40px; /* Marge gauche */
 }
 
 .inline {
-  display: inline;
-  margin-left: 10px;
+  display: inline; /* Afficher en ligne */
+  margin-left: 10px; /* Marge gauche */
 }
 
-
 .img-container {
-  position: center;
-  bottom: 0;
-  right: 0%; 
+  position: center; /* Positionnement central */
+  bottom: 0; /* Bas */
+  right: 0%; /* Droite */
 }
 
 .img-container img {
-  opacity: 0;
-  transition: opacity 30s ease-in-out, transform 40s ease-in-out;
-  margin-top: 20px; 
-  vertical-align: middle;
+  opacity: 0; /* Opacité initiale */
+  transition: opacity 30s ease-in-out, transform 40s ease-in-out; /* Transition d'opacité et de transformation */
+  margin-top: 20px; /* Marge supérieure */
+  vertical-align: middle; /* Alignement vertical */
 }
 
 /* Afficher le texte au survol */
 .image-link:hover .text-overlay {
   opacity: 1;
 }
+
 /* Positionnement relatif pour le conteneur d'image */
 .image-wrapper {
-  position: relative;
-  display: inline-block; /* pour s'adapter à la taille de l'image */
+  position: relative; /* Positionnement relatif */
+  display: inline-block; /* Afficher en ligne */
 }
 
 /* Filtre semi-transparent */
 .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; /* Prend la largeur de l'image */
-  height: 100%; /* Prend la hauteur de l'image */
-  background-color: rgba(0, 235, 212, 0.667); /* #00ebd4 semi-transparent */
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  position: absolute; /* Position absolue */
+  top: 0; /* Haut */
+  left: 0; /* Gauche */
+  width: 100%; /* Largeur */
+  height: 100%; /* Hauteur */
+  background-color: rgba(0, 235, 212, 0.667); /* Couleur semi-transparente */
+  opacity: 0; /* Opacité initiale */
+  transition: opacity 0.3s ease; /* Transition d'opacité */
 }
 
 /* Texte sur l'image */
 .text-overlay {
-font-family: "Share Tech", sans-serif;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-family: "Share Tech", sans-serif; /* Police de caractères */
+  position: absolute; /* Position absolue */
+  top: 50%; /* Centre vertical */
+  left: 50%; /* Centre horizontal */
+  transform: translate(-50%, -50%); /* Centrage */
   color: #77C2F8; /* Couleur du texte */
-  font-size: 18px; /* Taille du texte */
+  font-size: 18px; /* Taille de la police */
   font-weight: bold; /* Gras */
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  opacity: 0; /* Opacité initiale */
+  transition: opacity 0.3s ease; /* Transition d'opacité */
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Contour noir */
 }
 
 /* Afficher le texte et le filtre au survol */
 .image-link:hover .overlay {
-  opacity: 1;
+  opacity: 1; /* Afficher le filtre */
 }
 
 .image-link:hover .text-overlay {
-  opacity: 1;
+  opacity: 1; /* Afficher le texte */
 }
-
