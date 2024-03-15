@@ -191,7 +191,7 @@ i {
 /* Personnaliser le bouton de pause/lecture */
 button {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #00ebd4; /* Couleur de fond */
+  background-color: rgba(0, 235, 212, 0.8); /* Couleur de fond avec une opacité de 0.8 */
   color: #000000; /* Couleur du texte */
   border: none; /* Supprimer les bordures */
   padding: 10px 20px; /* Espacement intérieur */
@@ -200,13 +200,12 @@ button {
   /* Ajoutez d'autres styles selon vos préférences */
 }
 
-.audio-player {
+.audio-player-container {
   position: fixed;
-  bottom: 0;
-  left: 50%;
+  bottom: 20px; /* Ajustez selon vos besoins */
+  left: 90%;
   transform: translateX(-50%);
-  width: 300px;
-  padding: 20px;
-  z-index: 1;
-  margin-left: -150px; /* La moitié de la largeur */
+  width: 200px; /* Nouvelle largeur */
+  padding: 10px; /* Nouvel espacement intérieur */
+  z-index: 9999; /* Conteneur parent a un z-index plus élevé */
 }
