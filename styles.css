@@ -152,7 +152,7 @@ i {
   left: 0; /* Gauche */
   width: 100%; /* Largeur */
   height: 100%; /* Hauteur */
-  background-color: rgba(0, 235, 212, 0.667); /* Couleur semi-transparente */
+  background-color: rgba(19, 20, 26, 0.5);
   opacity: 0; /* Opacité initiale */
   transition: opacity 0.3s ease; /* Transition d'opacité */
 }
@@ -172,7 +172,7 @@ i {
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Contour noir */
 }
 
-/* Afficher le texte et le filtre au survol */
+/* Afficher le texte et le filtre au survol d'img */
 .image-link:hover .overlay {
   opacity: 1; /* Afficher le filtre */
 }
@@ -181,11 +181,11 @@ i {
   opacity: 1; /* Afficher le texte */
 }
 
-/*Styliser la barre de volume */
+
+/* Player et volume controler */
 .custom-volume-control {
   width: 100px; /* Largeur personnalisée */
   height: 10px; /* Hauteur personnalisée */
-  /* Ajoutez d'autres styles selon vos préférences */
 }
 
 /* Personnaliser le bouton de pause/lecture */
@@ -197,7 +197,6 @@ button {
   padding: 10px 20px; /* Espacement intérieur */
   cursor: pointer; /* Curseur de souris */
   border-radius: 30px; /* Coins arrondis */
-  /* Ajoutez d'autres styles selon vos préférences */
 }
 
 .audio-player-container {
