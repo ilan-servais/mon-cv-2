@@ -19,7 +19,7 @@ $(window).on("load", function() {
     // Définir les messages à afficher
     setTimeout(function(){
         var greeting = "UNIDENTIFIED ORGANIC LIFEFORM DETECTED";
-        var message = "Running code protocol for.. Web Development Student | 📆Available for a 2-year internship starting September 2024 | Passionate about the Web and Gaming 🎮 | Aspiring Full Stack Developer... 01001000 01100101 01101100 01101100 01101111";
+        var message = "Running cod£ protoc♦l... Available 📆 Web Dev...";
         var $identityDiv = $("#identity-results");
         var $name = "NAME: ILAN SERVAIS";
         var $alias = "KNOWN ALIAS: SL4SH"
@@ -66,7 +66,7 @@ $(window).on("load", function() {
                     if(i < $name.length){
                         setTimeout(function(){
                             initName(i + 1);   
-                        }, 35);
+                        }, 20);
                     }else{
                         $("#name").removeClass("cursor");
                         setTimeout(function() {
@@ -76,7 +76,7 @@ $(window).on("load", function() {
                 }
                 setTimeout(function() {
                     initName(0);
-                }, 2500);
+                }, 1000);
             }
             // Fonction pour afficher le nom d'utilisateur
             function initAlias(i){
@@ -84,12 +84,12 @@ $(window).on("load", function() {
                 if(i < $alias.length){
                     setTimeout(function(){
                         initAlias(i + 1);   
-                    }, 35);
+                    }, 20);
                 }else{
                     $("#alias").removeClass("cursor");
                     setTimeout(function() {
                         initOccupation(0);
-                    }, 1500);
+                    }, 1000);
                 }
             }
             // Fonction pour afficher l'occupation
@@ -98,12 +98,12 @@ $(window).on("load", function() {
                 if(i < $occupation.length){
                     setTimeout(function(){
                         initOccupation(i + 1);   
-                    }, 35);
+                    }, 20);
                 }else{
                     $("#occupation").removeClass("cursor");
                     setTimeout(function() {
                         initFrontEnd(0);
-                    }, 1500);
+                    }, 1000);
                 }
             }
             // Fonction pour afficher txt  
@@ -113,12 +113,12 @@ $(window).on("load", function() {
                 if(i < $frontEnd.length){
                     setTimeout(function(){
                         initFrontEnd(i + 1);  
-                    }, 35);
+                    }, 20);
                 }else{
                     $('#front-end').removeClass("cursor");
                     setTimeout(function() {
                         initJSFrameworks(0);
-                    }, 1500);
+                    }, 1000);
                 }
             }
             // Fonction pour afficher txt  
@@ -127,12 +127,12 @@ $(window).on("load", function() {
                 if(i < $JSFrameworks.length){
                     setTimeout(function(){
                         initJSFrameworks(i + 1);  
-                    }, 35);
+                    }, 20);
                 }else{
                     $('#js-frameworks').removeClass("cursor");
                     setTimeout(function() {
                         initJSLibs(0);
-                    }, 1500);
+                    }, 1000);
                 }
             }
             // Fonction pour afficher txt  
@@ -141,12 +141,12 @@ $(window).on("load", function() {
                 if(i < $JSLibs.length){
                     setTimeout(function(){
                         initJSLibs(i + 1);  
-                    }, 35);
+                    }, 20);
                 }else{
                     $('#js-libs').removeClass("cursor");
                     setTimeout(function() {
                         initCSSFrameworks(0);
-                    }, 1500);
+                    }, 1000);
                 }
             }
             // Fonction pour afficher txt  
@@ -155,12 +155,12 @@ $(window).on("load", function() {
                 if(i < $CSSFrameworks.length){
                     setTimeout(function(){
                         initCSSFrameworks(i + 1);  
-                    }, 35);
+                    }, 20);
                 }else{
                     $('#css-frameworks').removeClass("cursor");
                     setTimeout(function() {
                         initCSSPre(0);
-                    }, 1500);
+                    }, 1000);
                 }
             }
             // Fonction pour afficher txt  
@@ -169,12 +169,12 @@ $(window).on("load", function() {
                 if(i < $CSSPre.length){
                     setTimeout(function(){
                         initCSSPre(i + 1);  
-                    }, 35);
+                    }, 20);
                 }else{
                     $('#css-pre').removeClass("cursor");
                     setTimeout(function() {
                         initFrontEndAnimation(0);
-                    }, 1500);
+                    }, 1000);
                 }
             }
             // Fonction pour afficher txt  
@@ -183,12 +183,12 @@ $(window).on("load", function() {
                 if(i < $frontEndAnimation.length){
                     setTimeout(function(){
                         initFrontEndAnimation(i + 1);  
-                    }, 35);
+                    }, 20);
                 }else{
                     $('#front-end-animation').removeClass("cursor");
                     setTimeout(function() {
                         initCMSDevelopment(0);
-                    }, 1500);
+                    }, 1000);
                 }
             }
             // Fonction pour afficher txt  
@@ -198,12 +198,12 @@ $(window).on("load", function() {
                 if(i < $cmsDevelopment.length){
                     setTimeout(function(){
                         initCMSDevelopment(i + 1);  
-                    }, 35);
+                    }, 20);
                 }else{
                     $('#CMS-development').removeClass("cursor");
                     setTimeout(function() {
                         initWordpress(0);
-                    }, 1500);
+                    }, 1000);
                 }
             }
             // Fonction pour afficher txt  
@@ -212,12 +212,12 @@ $(window).on("load", function() {
                 if(i < $wordpress.length){
                     setTimeout(function(){
                         initWordpress(i + 1);  
-                    }, 35);
+                    }, 20);
                 }else{
                     $('#wordpress').removeClass("cursor");
                     setTimeout(function() {
                         initDesign(0);
-                    }, 1500);
+                    }, 1000);
                 }
             }
             // Fonction pour afficher txt  
@@ -227,12 +227,12 @@ $(window).on("load", function() {
                 if(i < $design.length){
                     setTimeout(function(){
                         initDesign(i + 1);  
-                    }, 35);
+                    }, 20);
                 }else{
                     $('#design').removeClass("cursor");
                     setTimeout(function() {
                         initWebDesign(0);
-                    }, 1500);
+                    }, 1000);
                 }
             }
             // Fonction pour afficher txt  
@@ -241,12 +241,12 @@ $(window).on("load", function() {
                 if(i < $webDesign.length){
                     setTimeout(function(){
                         initWebDesign(i + 1);  
-                    }, 35);
+                    }, 20);
                 }else{
                     $('#web-design').removeClass("cursor");
                     setTimeout(function() {
                         initBranding(0);
-                    }, 1500);
+                    }, 1000);
                 }
             }
             // Fonction pour afficher txt  
@@ -291,32 +291,29 @@ $(window).on("load", function() {
         initProgramAlpha(0)
  
     }, 1500);
- 
-    // Supprimer la classe img-hidden une fois que la page est chargée
-    $(".img-container img").css("opacity", "0").each(function(index) {
-        $(this).delay(500 * index).animate({ opacity: 1 }, 45000);
+
+        // Supprimer la classe img-hidden une fois que la page est chargée
+        $(".img-container img").css("opacity", "0").each(function(index) {
+            $(this).delay(500 * index).animate({ opacity: 1 }, 25000);
+        });
     });
- });
- 
-// Fonction pour changer le volume
-function changeVolume() {
-    var player = document.getElementById('musicPlayer');
-    var volume = document.getElementById('volumeControl').value;
-    player.volume = volume;
-}
-
-// Fonction pour mettre en pause ou jouer la musique
-function togglePlayPause() {
-    var player = document.getElementById('musicPlayer');
-    if (player.paused) {
-        player.play();
-    } else {
-        player.pause();
-    }
-}
-
-// Définir le volume initial à 5% au chargement de la page
-window.onload = function() {
-    var player = document.getElementById('musicPlayer');
-    player.volume = 0.05;
-};
+        // Fonction pour changer le volume
+        function changeVolume() {
+            var player = document.getElementById('musicPlayer');
+            var volume = document.getElementById('volumeControl').value;
+            player.volume = volume;
+        }
+        // Fonction pour mettre en pause ou jouer la musique
+        function togglePlayPause() {
+            var player = document.getElementById('musicPlayer');
+            if (player.paused) {
+                player.play();
+            } else {
+                player.pause();
+            }
+        }
+        // Définir le volume initial à 5% au chargement de la page
+        window.onload = function() {
+            var player = document.getElementById('musicPlayer');
+            player.volume = 0.05;
+        };
