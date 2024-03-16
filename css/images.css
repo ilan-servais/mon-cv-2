@@ -1,0 +1,62 @@
+  /* Styles d'image */
+.img-container {
+    position: center; /* Positionnement central */
+    bottom: 20px; /* Bas */
+    right: 0%; /* Droite */
+  }
+  
+  .img-container img {
+    opacity: 0; /* Opacité initiale */
+    transition: opacity 10s ease-in-out, transform 10s ease-in-out; /* Transition d'opacité et de transformation */
+    margin-top: 20px; /* Marge supérieure */
+    vertical-align: middle; /* Alignement vertical */
+  }
+  
+  /* Afficher le texte au survol */
+  .image-link:hover .text-overlay {
+    opacity: 1;
+  }
+  
+  /* Positionnement relatif pour le conteneur d'image */
+  .image-wrapper {
+    position: relative; /* Positionnement relatif */
+    display: inline-block; /* Afficher en ligne */
+  }
+  
+  /* Filtre semi-transparent */
+  .overlay {
+    position: absolute; /* Position absolue */
+    top: 0; /* Haut */
+    left: 0; /* Gauche */
+    width: 100%; /* Largeur */
+    height: 100%; /* Hauteur */
+    background-color: rgba(19, 20, 26, 0.5);
+    opacity: 0; /* Opacité initiale */
+    transition: opacity 0.3s ease; /* Transition d'opacité */
+  }
+  
+  /* Texte sur l'image */
+  .text-overlay {
+    font-family: "Share Tech", sans-serif; /* Police de caractères */
+    position: absolute; /* Position absolue */
+    top: 50%; /* Centre vertical */
+    left: 50%; /* Centre horizontal */
+    transform: translate(-50%, -50%); /* Centrage */
+    color: #77C2F8; /* Couleur du texte */
+    font-size: 18px; /* Taille de la police */
+    font-weight: bold; /* Gras */
+    opacity: 0; /* Opacité initiale */
+    transition: opacity 0.3s ease; /* Transition d'opacité */
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Contour noir */
+  }
+  
+  /* Afficher le texte et le filtre au survol d'img */
+  .image-link:hover .overlay {
+    opacity: 1; /* Afficher le filtre */
+  }
+  
+  .image-link:hover .text-overlay {
+    opacity: 1; /* Afficher le texte */
+  }
+
+  

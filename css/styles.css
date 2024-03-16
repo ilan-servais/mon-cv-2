@@ -1,0 +1,122 @@
+/* Styles de base */
+
+body {
+  background-color: #000; /* Couleur de fond */
+  margin: 0; /* Supprime les marges par défaut */
+  padding: 0; /* Supprime les marges intérieures par défaut */
+}
+
+/* Classe .container utilisée pour contenir le contenu de la page et limiter sa largeur à 1200px. */
+
+.container {
+  max-width: 1200px; /* Largeur maximale de la page */
+  margin: 0 auto; /* Centrer horizontalement */
+  padding: 20px; /* Ajouter un espace intérieur */
+  position: relative; /* Position relative pour permettre le positionnement absolu de l'audio-container */
+}
+
+.img-container img {
+  max-width: 100%; /* Image occupant toute la largeur */
+  height: auto; /* Hauteur ajustée automatiquement */
+  margin: 0 auto; /* Centrer horizontalement */
+}
+
+/* Media queries pour les écrans de taille moyenne */
+@media screen and (max-width: 992px) {
+  .container {
+      padding: 10px; /* Réduire l'espace intérieur */
+  }
+}
+
+/* Media queries pour les écrans de petite taille */
+@media screen and (max-width: 768px) {
+  .container {
+      padding: 5px; /* Réduire davantage l'espace intérieur */
+  }
+}
+
+h1 {
+  font-family: "Share Tech"; /* Police de caractères */
+  animation: pulse 0.9s infinite; /* Animation de pulsation */
+  color: #00ebd4; /* Couleur du texte */
+}
+
+/* Styles pour différents éléments de texte */
+#identity-results, #resume, #loading-alpha-div, #loadingH1, #loadingMessage2, #message {
+  margin-top: 20px; /* Marge supérieure */
+  font-family: "Share Tech"; /* Police de caractères */
+  font-weight: 900; /* Poids de la police */
+  font-size: 24px; /* Taille de la police */
+  color: #00ebd4; /* Couleur du texte */
+  animation: pulse 0.9s infinite; /* Animation de pulsation */
+}
+
+i {
+  font-size: 24px; /* Taille de la police */
+  color: #00ebd4; /* Couleur du texte */
+  animation: pulse 0.9s infinite; /* Animation de pulsation */
+}
+
+.block {
+  width: 50px; /* Largeur */
+  height: 50px; /* Hauteur */
+  background-color: #000; /* Couleur de fond */
+}
+
+/* Animation de pulsation */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Curseur clignotant */
+.cursor:after {
+  content: "_"; /* Contenu */
+  opacity: 0; /* Opacité */
+  animation: cursor 1s infinite; /* Animation de clignotement */
+}
+
+.sign:before {
+  content: "> "; /* Contenu */
+}
+
+/* Animation de clignotement */
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#loadingMessage2 {
+  display: none; /* Masquer */
+}
+
+/* Styles pour les sous-éléments */
+.sub-item {
+  margin-top: 20px; /* Marge supérieure */
+  margin-left: 40px; /* Marge gauche */
+}
+
+.inline {
+  display: inline; /* Afficher en ligne */
+  margin-left: 10px; /* Marge gauche */
+}

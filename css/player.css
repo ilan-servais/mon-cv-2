@@ -1,0 +1,26 @@
+  /* Player et volume controler */
+  .custom-volume-control {
+    width: 100px; /* Largeur personnalisée */
+    height: 10px; /* Hauteur personnalisée */
+  }
+  
+  /* Personnaliser le bouton de pause/lecture */
+  button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(0, 235, 212, 0.5); /* Couleur de fond avec une opacité de 0.8 */
+    color: #ffffff; /* Couleur du texte */
+    border: none; /* Supprimer les bordures */
+    padding: 10px 20px; /* Espacement intérieur */
+    cursor: pointer; /* Curseur de souris */
+    border-radius: 30px; /* Coins arrondis */
+  }
+  
+  .audio-player-container {
+    position: fixed;
+    bottom: 20px;
+    left: 90%;
+    transform: translateX(-50%);
+    width: 200px; /* largeur */
+    padding: 10px; /* espacement intérieur */
+    z-index: 9999; /* Conteneur parent a un z-index plus élevé */
+  }

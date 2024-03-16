@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="space.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/space.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/player.css">
 </head>
 <body>
+
     <div class="container">
         <!-- Titre principal avec une icône -->
         <h1 id="loadingH1"><span><i class="fa fa-cogs"></i></span> RUNNING IDENTITY PROTOCOL<span id="loading">.</span></h1>
@@ -27,7 +30,7 @@
             <h3 id="alias"></h3> <!-- Alias -->
             <h3 id="occupation"></h3> <!-- Occupation -->
             <br>
-            <!-- Compétences en développement -->
+            <!-- Affichage des textes -->
             <i id="front-end-span"></i><h3 id="front-end" class="inline"></h3>
             <h4 id="js-frameworks" class="sub-item"></h4>
             <h4 id="js-libs" class="sub-item"></h4>
@@ -73,7 +76,7 @@
     <!-- Lecture automatique de la musique -->
     <div class="audio-player-container" id="audioPlayer" class="audio-player"> <!-- Ajoutez la classe audio-player ici -->
         <!-- Intégration du lecteur audio avec lecture automatique et répétition -->
-        <audio id="musicPlayer" src="img/X-Files-Theme-Piano-Myuu.mp3" autoplay loop></audio>
+        <audio id="musicPlayer" src="img/X-Files-Theme-Piano-Myuu.mp3" loop></audio>
     
         <!-- Contrôle de volume -->
         <input type="range" id="volumeControl" class="custom-volume-control" min="0" max="1" step="0.1" value="1" onchange="changeVolume()">
@@ -85,8 +88,8 @@
     <!-- Inclusion de jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Inclusion du script JavaScript -->
-    <script src="images.js" defer></script> <!-- Utilise l'attribut 'defer' pour garantir que le script est exécuté après le chargement de la page -->
-    <script src="musique.js" defer></script>
-    <script src="base.js"></script>
+    <script src="js/images.js" defer></script> <!-- L'attribut 'defer' pour garantir que le script est exécuté après le chargement de la page -->
+    <script src="js/player.js" defer></script>
+    <script src="js/base.js"></script>
 </body>
 </html>
