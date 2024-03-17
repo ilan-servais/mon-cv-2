@@ -1,0 +1,76 @@
+  /* Classe .container utilisée pour contenir le contenu de la page et limiter sa largeur à 1200px. */
+
+.container {
+  max-width: 1200px; /* Largeur maximale de la page */
+  margin: 0 auto; /* Centrer horizontalement */
+  padding: 20px; /* Ajouter un espace intérieur */
+  position: relative; /* Position relative pour permettre le positionnement absolu de l'audio-container */
+}
+
+.img-container img {
+  max-width: 100%; /* Image occupant toute la largeur */
+  height: auto; /* Hauteur ajustée automatiquement */
+  margin: 0 auto; /* Centrer horizontalement */
+}
+
+/* Styles d'image */
+.img-container {
+  text-align: center; /* Centrer horizontalement les éléments enfants */
+  position: center; /* Positionnement central */
+  bottom: 20px; /* Bas */
+}
+
+.img-container img {
+  opacity: 70%; /* Opacité initiale */
+  transition: opacity 1s ease-in-out; /* Transition d'opacité et de transformation */
+  margin-top: 20px; /* Marge supérieure */
+  vertical-align: middle; /* Alignement vertical */
+}
+
+/* Afficher le texte au survol */
+.image-link:hover .text-overlay {
+  opacity: 1;
+}
+
+/* Positionnement relatif pour le conteneur d'image */
+.image-wrapper {
+  position: relative; /* Positionnement relatif */
+  display: inline-block; /* Afficher en ligne */
+}
+
+/* Filtre semi-transparent */
+.overlay {
+  position: absolute; /* Position absolue */
+  top: 0; /* Haut */
+  left: 0; /* Gauche */
+  width: 100%; /* Largeur */
+  height: 100%; /* Hauteur */
+  background-color: rgba(19, 20, 26, 0.5);
+  opacity: 0; /* Opacité initiale */
+  transition: opacity 0.3s ease; /* Transition d'opacité */
+}
+
+/* Texte sur l'image */
+.text-overlay {
+  font-family: "Share Tech", sans-serif; /* Police de caractères */
+  position: absolute; /* Position absolue */
+  top: 50%; /* Centre vertical */
+  left: 50%; /* Centre horizontal */
+  transform: translate(-50%, -50%); /* Centrage */
+  color: #77C2F8; /* Couleur du texte */
+  font-size: 18px; /* Taille de la police */
+  font-weight: bold; /* Gras */
+  opacity: 0; /* Opacité initiale */
+  transition: opacity 0.3s ease; /* Transition d'opacité */
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Contour noir */
+}
+
+/* Afficher le texte et le filtre au survol d'img */
+.image-link:hover .overlay {
+  opacity: 1; /* Afficher le filtre */
+}
+
+.image-link:hover .text-overlay {
+  opacity: 1; /* Afficher le texte */
+}
+

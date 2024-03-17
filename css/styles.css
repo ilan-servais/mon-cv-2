@@ -1,7 +1,6 @@
 /* Styles de base */
 
 body {
-  background-color: #000; /* Couleur de fond */
   margin: 0; /* Supprime les marges par défaut */
   padding: 0; /* Supprime les marges intérieures par défaut */
 }
@@ -84,7 +83,7 @@ i {
 }
 
 .sign:before {
-  content: "> "; /* Contenu */
+  content: "> "; /* Animation */
 }
 
 /* Animation de clignotement */

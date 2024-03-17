@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Portfolio</title>
     <link rel="stylesheet" href="css/global/space.css">
-    <link rel="stylesheet" href="css/images.css">
-    <link rel="stylesheet" href="css/player.css">
     <link rel="stylesheet" href="css/global/sidenav.css">
+    <link rel="stylesheet" href="css/contact/images.css">
+    <link rel="stylesheet" href="css/contact/textes.css">
 </head>
 <body>
     <!-- Sidenav bar avec titres -->
@@ -24,37 +23,13 @@
       <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9787;open</span>
     </div>
 
+    <h1>Bienvenue ! 😊</h1>
+    <p>Je suis ravi de vous accueillir sur mon site web en travaux 🚧</p>
+    <p>N'hésitez pas à explorer les différentes sections pour en savoir plus sur moi et mes projets 🚀</p>
+    <p>N'hésitez pas à me contacter si vous avez des questions ou des propositions de collaboration</p>
+    
+
     <div class="container">
-        <!-- Titre principal avec une icône -->
-        <h1 id="loadingH1"><span><i class="fa fa-cogs"></i></span> RUNNING IDENTITY PROTOCOL<span id="loading">.</span></h1>
-        
-        <!-- Div pour afficher les résultats d'identité -->
-        <div id="identity-results">
-            <h1 id="greeting"></h1> <!-- Titre de salutation -->
-            <p id="message"></p> <!-- Message d'identification -->
-        </div>
-        
-        <!-- Message de chargement pour le CV -->
-        <h3 id="loadingMessage2">LOADING RESUME & PROJECTS<span id="alpha-loading"></span>.</h3>
-
-        <!-- Div pour afficher le CV -->
-        <div id="resume">
-            <h3 id="name"></h3> <!-- Nom -->
-            <h3 id="alias"></h3> <!-- Alias -->
-            <h3 id="occupation"></h3> <!-- Occupation -->
-            <br>
-            <!-- Affichage des textes -->
-            <i id="front-end-span"></i><h3 id="front-end" class="inline"></h3>
-            <h4 id="js-frameworks" class="sub-item"></h4>
-            <h4 id="js-libs" class="sub-item"></h4>
-            <h4 id="css-frameworks" class="sub-item"></h4>
-            <h4 id="css-pre" class="sub-item"></h4>
-            <h4 id="front-end-animation" class="sub-item"></h4>
-            <h4 id="CMS-development" class="sub-item"></h4> 
-            <h4 id="wordpress" class="sub-item"></h4>
-            <h4 id="design" class="sub-item"></h4>
-        </div>
-
         <!-- Div pour afficher les liens sociaux avec les images -->
         <div id="social-links" class="img-container">
             <!-- Lien vers la page Marseille avec le logo -->
@@ -85,25 +60,8 @@
             </a>            
         </div>
     </div>
-      
-    <!-- Lecture automatique de la musique -->
-    <div class="audio-player-container" id="audioPlayer" class="audio-player"> <!-- Ajoutez la classe audio-player ici -->
-        <!-- Intégration du lecteur audio avec lecture automatique et répétition -->
-        <audio id="musicPlayer" src="img/X-Files-Theme-Piano-Myuu.mp3" loop></audio>
-    
-        <!-- Contrôle de volume -->
-        <input type="range" id="volumeControl" class="custom-volume-control" min="0" max="1" step="0.1" value="1" onchange="changeVolume()">
-    
-        <!-- Bouton de pause/lecture -->
-        <button onclick="togglePlayPause()">Play me !</button>
-    </div>
 
-    <!-- Inclusion de jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Inclusion du script JavaScript -->
-    <script src="js/images.js" defer></script> <!-- L'attribut 'defer' pour garantir que le script est exécuté après le chargement de la page -->
-    <script src="js/player.js" defer></script>
-    <script src="js/base.js"></script>
     <script src="js/global/sidenav.js"></script>
 </body>
 </html>
