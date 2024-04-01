@@ -1,0 +1,191 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+.img1 { background-image: url("img/MatchaTea\ \(1\).jpg"); }
+.img2 { background-image: url("img/MatchaTea\ \(2\).jpg"); }
+.img3 { background-image: url("img/espace\ \(1\).jpg"); }
+.img4 { background-image: url("img/espace\ \(2\).jpg"); }
+.img5 { background-image: url("img/Marseille\ \(1\).jpg"); }
+.img6 { background-image: url("img/Marseille\ \(2\).jpg"); }
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.667); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: 10px solid #f1f1f1;
+  position: fixed; /* Stay fixed */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 20px;
+  text-align: left
+}
+
+.centered-title {
+  text-align: center;
+}
+
+/* Position the button */
+#toggleButton {
+  position: absolute;
+  top: calc(100% + 20px); /* Position 20px below the .bg-text */
+  top: 49%;
+  left: 15%;
+  transform: translateX(-50%);
+  padding: 10px 10px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style the button on hover */
+#toggleButton:hover {
+  background-color: #47a03f;
+}
+
+#toggleButton2 {
+  position: absolute;
+  top: calc(100% + 20px); /* Position 20px below the .bg-text */
+  top: 149%;
+  left: 15%;
+  transform: translateX(-50%);
+  padding: 10px 10px;
+  background-color: #a52626;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style the button on hover */
+#toggleButton2:hover {
+  background-color: #aebbad;
+}
+
+#toggleButton3 {
+  position: absolute;
+  top: calc(100% + 20px); /* Position 20px below the .bg-text */
+  top: 249%;
+  left: 15%;
+  transform: translateX(-50%);
+  padding: 10px 10px;
+  background-color: #269da5;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style the button on hover */
+#toggleButton3:hover {
+  background-color: #aebbad;
+}
+
+/* Custom Scrollbar */
+/*                  */
+/* Définir les variables de couleur de la scrollbar */
+:root {
+  --scrollbar-color: #9CC757; /* Couleur par défaut */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-gradient); 
+  border-radius: 10px;
+}
+
+/* image carré */
+
+/* image carré */
+.square-image {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50% - 120px); /* Position 120px au-dessus du bouton */
+  left: 15%;
+  top: 37%;
+  transform: translateX(-50%);
+  display: none; /* Masquer l'image initialement */
+  z-index: 3; /* Assurez-vous que l'image apparaît au-dessus du bouton */
+  border-radius: 5px;
+}
+
+.square-image2 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50% - 120px); /* Position 120px au-dessus du bouton */
+  left: 15%;
+  top: 137%;
+  transform: translateX(-50%);
+  display: none; /* Masquer l'image initialement */
+  z-index: 3; /* Assurez-vous que l'image apparaît au-dessus du bouton */
+  border-radius: 5px;
+}
+
+.square-image3 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50% - 120px); /* Position 120px au-dessus du bouton */
+  left: 15%;
+  top: 237%;
+  transform: translateX(-50%);
+  display: none; /* Masquer l'image initialement */
+  z-index: 3; /* Assurez-vous que l'image apparaît au-dessus du bouton */
+  border-radius: 5px;
+}
+
+/* Media queries pour ajuster la position de l'image */
+@media screen and (max-width: 1440px) and (max-height: 900px) {
+  .square-image {
+    top: calc(50% - 170px); /* Augmente la position verticale de l'image de 100px */
+  }
+}
+
+/* Media queries pour ajuster la position de l'image */
+@media screen and (max-width: 1280px) and (max-height: 950px) {
+  .square-image {
+    top: calc(50% - 170px); /* Augmente la position verticale de l'image de 100px */
+  }
+}
+
+@media screen and (max-width: 1037px) and (max-height: 800px) {
+  .square-image {
+    top: calc(50% - 170px); /* Augmente la position verticale de l'image de 100px */
+  }
+}
